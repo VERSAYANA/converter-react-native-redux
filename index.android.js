@@ -4,7 +4,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import devToolsEnhancer from 'remote-redux-devtools';
 import reducers from './src/reducers'
-import App from './src/App'
+import Home from './src/components/Home'
 
 const store = createStore(reducers, devToolsEnhancer());
 
@@ -12,7 +12,7 @@ export default class ReactNativeConverter extends Component {
   render() {
     return (
       <Provider store={store}>
-        <App />
+        <Home />
       </Provider>
     );
   }

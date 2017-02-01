@@ -1,4 +1,4 @@
-const firstState = {
+{
   "Length": {
     "Metre": "",
     "Foot": "",
@@ -28,5 +28,3 @@ const firstState = {
   },
 
 }
-
-export default firstState;
