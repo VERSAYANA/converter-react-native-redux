@@ -1,6 +1,6 @@
 const unitLength = (source) => {
   return {
-    Metre: source,
+    Metre: source || '',
     Foot: source * 3.28 || '',
     Inch: source * 39.37 || '',
     Yard: source * 1.09 || '',

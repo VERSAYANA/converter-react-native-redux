@@ -1,23 +1,20 @@
-import { connect } from 'react-redux';
-import TimeTab from '../components/TimeTab'
+import { connect } from "react-redux";
+import TimeTab from "../components/TimeTab";
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   units: Object.entries(state.time)
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   changeValue: (unit, value) => {
     dispatch({
-      type: 'CHANGE_TIME',
+      type: "CHANGE_TIME",
       unit,
-      value,
+      value
     });
   }
 });
 
-const TimeContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(TimeTab);
+const TimeContainer = connect(mapStateToProps, mapDispatchToProps)(TimeTab);
 
 export default TimeContainer;

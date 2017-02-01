@@ -1,23 +1,20 @@
-import { connect } from 'react-redux';
-import MassTab from '../components/MassTab'
+import { connect } from "react-redux";
+import MassTab from "../components/MassTab";
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   units: Object.entries(state.mass)
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   changeValue: (unit, value) => {
     dispatch({
-      type: 'CHANGE_MASS',
+      type: "CHANGE_MASS",
       unit,
-      value,
+      value
     });
   }
 });
 
-const MassContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(MassTab);
+const MassContainer = connect(mapStateToProps, mapDispatchToProps)(MassTab);
 
 export default MassContainer;

@@ -11,13 +11,18 @@ const Home = TabNavigator({
   Pressure: { screen: PressureContainer },
   Time: { screen: TimeContainer },
 }, {
+  tabBarPosition: 'bottom',
   tabBarOptions: {
     upperCaseLabel: false,
+    activeTintColor: '#00BCD4',
     style: {
-      // justifyContent: 'center',
-      // alignItems: 'center',
-      // alignContent: 'center'
-    }
+      backgroundColor: 'black',
+    },
+    tabStyle: {
+    },
+    indicatorStyle: {
+      backgroundColor: '#00BCD4',
+    },
   }
 });
 
