@@ -12,7 +12,7 @@ class LengthTab extends React.Component {
             <TextInput
               ref={i}
               style={s.textInput}
-              underlineColorAndroid={"#00BCD4"}
+              underlineColorAndroid={"black"}
               keyboardType="numeric"
               value={u[1].toString()}
               onSubmitEditing={() => this.refs[i].blur()}

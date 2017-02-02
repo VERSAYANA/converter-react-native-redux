@@ -14,16 +14,19 @@ const Home = TabNavigator({
   tabBarPosition: 'bottom',
   tabBarOptions: {
     upperCaseLabel: false,
-    activeTintColor: '#00BCD4',
+    activeTintColor: 'black',
+    inactiveTintColor: '#757575',
+    pressColor: '#9E9E9E',
     style: {
-      backgroundColor: 'black',
+      backgroundColor: 'white',
     },
     tabStyle: {
     },
     indicatorStyle: {
-      backgroundColor: '#00BCD4',
+      backgroundColor: 'black',
     },
-  }
+  },
+  // swipeEnabled: false,
 });
 
 export default Home;
